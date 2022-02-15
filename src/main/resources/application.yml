@@ -1,0 +1,20 @@
+spring:
+  datasource:
+    username: root
+    password: HYSBEST1234
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/spring-security-database?useSSL=false&useUnicode=true&characterEncoding=utf8&useJDBCCompliantTimezoneShift=true&serverTimezone=UTC&allowPublicKeyRetrieval=true&autoReconnect=true&failOverReadOnly=false
+  main:
+    allow-circular-references: true
+  thymeleaf:
+    mode: HTML5
+    cache: false
+    servlet:
+      content-type: text/html
+    check-template-location: true
+server:
+  port: 8090
+
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
